@@ -66,25 +66,28 @@
 <h1 id="displayName">🧑‍🎄 Wishing you,  Guest </h1>
 </div>
 <div class="box">
-    <p class="cursor typewriter-animation">
-        ❄️a Christmas as wonderful as you are—overflowing,
-    </p>
-    <p class="cursor typewriter-animation">
-        <b>with love, laughter,</b> and <b>unforgettable memories.❄️</b>
-    </p>
+    <div class="box">
+
+    <p id="typewriter"></p>
+
+    <script>
+        const text = " ❄️a Christmas as wonderful as you are—overflowing with love, laughter, and unforgettable memories.❄️";
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typewriter").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50); // speed in ms per character
+            }
+        }
+
+        typeWriter();
+    </script>
 </div>
-
-<script>
-    // Get the ?name= value from the URL
-    const params = new URLSearchParams(window.location.search);
-    const name = params.get("name");
-
-    // Update the heading at the top
-    document.getElementById("displayName").textContent =
-        name ? "Wishing you , " + name : "Wishing you  , Guest ";
-</script>
 </body>
 
 </html>
+
 
 
