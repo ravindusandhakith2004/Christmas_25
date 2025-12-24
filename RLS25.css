@@ -1,7 +1,7 @@
 
 #typewriter {
     font-family: "Arial Black";
-    font-size: 38px;
+    font-size: 32.5px;
     border-right: 3px solid;
     display: inline-block;
     animation: blink .75s step-end infinite;
@@ -627,3 +627,4 @@
 
 /* Global */
 body { margin-top: 4em; padding: 5em; color: #f1f1f1; font-family: 'Anonymous Pro', monospace;background-color: rgba(9, 66, 170, 0.45); }
+
