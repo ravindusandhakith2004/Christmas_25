@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RLS_xmaxx</title>
+    <link rel="stylesheet" href="indexcss.css">
+</head>
+<body>
+
+<div class="loader">
+    <div class="loader-icon-1">&#10052;</div>
+    <div class="loader-text">Loading...</div>
+</div>
+<div class="main">
+    <div class="initial-snow">
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+        <div class="snow">&#10052;</div>
+
+        <div class="box">
+            <label>Insert Name :</label>
+            <input type="text" class="textbox" id="nameInput"><br>
+            <button onclick="RLS2025()"> NEXT </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function RLS2025() {
+        const name = document.getElementById("nameInput").value.trim();
+        if (!name) {
+            alert("Please enter a name");
+            return;
+        }
+        window.location.href = "RLS2025.html?name=" + encodeURIComponent(name);
+    }
+</script>
+</body>
+</html>
