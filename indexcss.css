@@ -592,6 +592,7 @@ body{
     height: 40%;
     width: 60%;
     margin-left: 15%;
+    margin-right: 15%;
     margin-top: 10%;
 }
 .textbox{
@@ -608,4 +609,5 @@ button{
     border-color: aqua;
     font-size:20px ;
     font-family: "Arial Black";
+
 }
