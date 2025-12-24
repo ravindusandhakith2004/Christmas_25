@@ -1,7 +1,7 @@
 
 #typewriter {
     font-family: "Arial Black";
-    font-size: 32.5px;
+    font-size: 32px;
     border-right: 3px solid;
     display: inline-block;
     animation: blink .75s step-end infinite;
@@ -28,6 +28,19 @@
     width: auto;
     background-color: #071c35;
 }
+.footer {
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    margin-top: 90%;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+
 .loader {
     position: absolute;
     top: 0;
@@ -627,4 +640,3 @@
 
 /* Global */
 body { margin-top: 4em; padding: 5em; color: #f1f1f1; font-family: 'Anonymous Pro', monospace;background-color: rgba(9, 66, 170, 0.45); }
-
